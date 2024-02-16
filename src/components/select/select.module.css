@@ -1,0 +1,63 @@
+p, h2 {
+  color: #263238;
+  margin: 1vh 0;
+}
+
+p {
+  font-size: 1.5vh;
+}
+
+.select {
+  width: 90%;
+  height: 100%;
+  margin: 0 1vw;
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}
+
+.select:disabled {
+  cursor: default;
+}
+
+option {
+  font-size: 105%;
+}
+
+option:checked{
+  background-color:rgb(195, 208, 224);
+}
+
+.select_first {
+  width: 70%;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}
+
+.fill_selects {
+  background-color:#263238;
+  padding: 0.5vh;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .select_first{
+    width: 60%;
+  }
+}
+
+@media (min-width: 1300px) {
+  p {
+    font-size: 110%;
+  }
+
+  select, option {
+    font-size: 110%;
+  }
+}

@@ -1,0 +1,31 @@
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 2vw;
+}
+
+.save_btn {
+  background-color: rgb(68, 126, 68);
+  padding: 1vh;
+  border-radius: 0.5vh;
+  color: #eceff1;
+  border: none;
+  margin: 2vh 0;
+    margin-left: 2.5vw;
+}
+
+.save_btn:hover {
+  background-color: rgb(97, 155, 97);
+  border: 0.2vh solid rgb(68, 126, 68);
+  padding: 0.9vh;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .card_container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
