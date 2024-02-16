@@ -25,7 +25,7 @@ function App() {
                 )}
             </div>
             {/* <div className={classes.btn_container}> */}
-            <button className={classes.save_btn} onClick={() => dispatch(postApi())}>
+            <button className={classes.save_btn} onClick={() => dispatch(postApi(data))}>
                 Сохранить
             </button>
             {/* </div> */}

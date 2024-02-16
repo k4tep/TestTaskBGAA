@@ -20,11 +20,11 @@ export async function postInfo(data:IData[]) {
   headers.append('Accept', 'application/json');
   headers.append('Content-Type', 'application/json');
   headers.append('Access-Control-Allow-Origin', '*');
-
+  console.log(data)
   const response = await fetch(`https://bgaa.by/test_result`, {
     method: 'POST',
     body: JSON.stringify(data),
-    // mode: 'cors',
+    mode: 'no-cors',
     headers,
   });
   if(response.status === 200){

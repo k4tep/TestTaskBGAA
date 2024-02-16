@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import {getInfo, postInfo} from '../api/api-request';
-import { ApiResponse, IState } from "../interfaces/data";
+import { ApiResponse, IData, IState } from "../interfaces/data";
 
 export const fetchApi = createAsyncThunk <ApiResponse>(
   'api/fetchApi',
@@ -10,10 +10,11 @@ export const fetchApi = createAsyncThunk <ApiResponse>(
   }
 )
 
-export const postApi = createAsyncThunk <ApiResponse>(
+export const postApi = createAsyncThunk <ApiResponse, IData[]>(
   'api/postApi',
-  async function () {
-      const response = await postInfo(initialState.results.data);
+  async function (data:IData[]) {
+    console.log(initialState.results.data)
+      const response = await postInfo(data);
       return response;
   }
 )
