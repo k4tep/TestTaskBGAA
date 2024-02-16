@@ -52,12 +52,20 @@ option:checked{
   }
 }
 
-@media (min-width: 1300px) {
-  p {
-    font-size: 110%;
+@media (min-width: 1400px) {
+  select, option, p {
+    font-size: 130%;
   }
+}
 
-  select, option {
-    font-size: 110%;
+@media (max-width: 2000px) {
+  select, option, p {
+    font-size: 130%;
+  }
+}
+
+@media (min-width: 2500px) {
+  select, option, p {
+    font-size: 140%;
   }
 }

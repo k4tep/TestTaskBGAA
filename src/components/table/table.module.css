@@ -108,8 +108,28 @@ p, h2 {
   }
 }
 
-@media (min-width: 1300px) {
+/* @media (min-width: 1400px) {
   p, h2 {
-    font-size: 110%;
+    font-size: 130%;
+  }
+} */
+
+@media (min-width: 2000px) {
+  p, h2 {
+    font-size: 130%;
+  }
+
+  .input, .input_count {
+    font-size: 140%;
+  }
+}
+
+@media (min-width: 2500px) {
+  p, h2 {
+    font-size: 140%;
+  }
+
+  .input, .input_count {
+    font-size: 150%;
   }
 }

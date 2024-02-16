@@ -67,8 +67,20 @@ hr {
   }
 }
 
-@media (min-width: 1300px) {
+ /* @media (min-width: 1400px) {
   .card{
-    font-size: 90%;
+    font-size: 75%;
+  }
+} */
+
+@media (min-width: 2000px) {
+  .card{
+    font-size: 100%;
+  }
+} 
+
+@media (min-width: 2500px) {
+  .card{
+    font-size: 110%;
   }
 }

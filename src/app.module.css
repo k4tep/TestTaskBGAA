@@ -29,3 +29,21 @@
     align-items: center;
   }
 }
+
+@media (min-width: 1400px) {
+  .save_btn{
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .save_btn{
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 2500px) {
+  .save_btn{
+    font-size: 130%;
+  }
+}
